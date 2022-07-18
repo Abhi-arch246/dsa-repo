@@ -14,7 +14,7 @@ void printArray(int arr[], int size)
 {
     cout << "Inside print function" << endl;
     for (int i = 0; i < size; i++)
-        cout << arr[i] << ", ";
+        cout << arr[i] << " ";
 }
 
 int main()
@@ -27,8 +27,9 @@ int main()
     for (int i = 0; i < size; i++)
         cin >> arr[i];
 
+    cout << "Inside Main program" << endl;
     for (int i = 0; i < size; i++)
-        cout << arr[i] << ", ";
+        cout << arr[i] << " ";
     cout << endl;
     printArray(arr, size);
 
