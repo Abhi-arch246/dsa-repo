@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+/*Bubble sort - Swapping repeatedly with the adjacent elements to attain sort.
+
+For n elements we will get result in n-1 iterations.
+
+Will check one element less at the last for every iteration.
+*/
 void bubble_sort(int arr[], int size)
 {
     int count = 1;
