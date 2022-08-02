@@ -3,43 +3,35 @@
 
 using namespace std;
 
-void setMatrixZeros(vector<vector<int>> &matrix)
+void setMatrixZeros_better(vector<vector<int>> &matrix)
 {
-    int row, col;
+    int col, row;
     row = matrix.size();
     col = matrix[0].size();
+    // Array for row matrix
+    vector<int> rowarray(row, -1);
+    // Array for col matrix
+    vector<int> colarray(col, -1);
 
-    // Traversing every element of 2d array
+    // Traversing through elements where 0 is found inserting 0 to row and col array
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
-            // Traversing every element to find 0's
             if (matrix[i][j] == 0)
             {
-                // Replacing that col to -1
-                for (int a = 0; a < col; a++)
-                {
-                    if (matrix[i][a] != 0)
-                        matrix[i][a] = -1;
-                }
-
-                // Replacing that row to -1
-                for (int b = 0; b < row; b++)
-                {
-                    if (matrix[b][j] != 0)
-                        matrix[b][j] = -1;
-                }
+                rowarray[i] = 0;
+                colarray[j] = 0;
             }
         }
     }
 
-    // Replacing every row & col from -1 to 0
+    // Traversing through row and col array where 0 is found will replace 0 in the original matrix
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
-            if (matrix[i][j] == -1)
+            if (rowarray[i] == 0 || colarray[j] == 0)
                 matrix[i][j] = 0;
         }
     }
@@ -64,7 +56,7 @@ int main()
         cout << endl;
     }
 
-    setMatrixZeros(matrix);
+    setMatrixZeros_better(matrix);
     cout << "This is the output matrix" << endl;
 
     // Printing 2d array
