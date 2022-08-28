@@ -68,5 +68,18 @@ int main()
     //     cout << endl;
     // }
 
+    // Iterator through the data structure
+
+    // vector<int> v :: iterator it;
+    // for( it=v.begin();it!=v.end();++i) {
+    //  cout<<*it;
+    // }
+    //
+    // vector<pair<int,int>> :: iterator it;
+    // for(it =v.begin();it!=v.end();++i) {
+    // cout<<*it.first<<*it.second;
+    // }
+    //
+
     return 0;
 }
