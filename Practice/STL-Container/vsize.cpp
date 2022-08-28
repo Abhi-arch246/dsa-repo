@@ -80,6 +80,13 @@ int main()
     // cout<<*it.first<<*it.second;
     // }
     //
+    // for(auto it =v.begin();it!=v.end();++i) {
+    // cout<<*it.first<<*it.second;
+    // }
+    //
+    // for(auto &value : v) {
+    // cout<<v;
+    // }
 
     return 0;
 }
