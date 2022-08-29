@@ -23,7 +23,7 @@ int main()
     {
         int x;
         cin >> x;
-        v.push_back(x);
+        v.push_back(x); // O(1)
     }
 
     cout << "Printing vector" << endl;
