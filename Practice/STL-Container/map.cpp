@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
 
+    // Map - O(log(n)), Unordered Map - O(1)
     map<int, string> m;
     m[1] = "hp"; // O(log(n))
     m[2] = "dell";
@@ -12,6 +13,13 @@ int main()
     // for (auto it = m.begin(); it != m.end(); ++it)
     // {
     //     cout << (*it).first << " " << (*it).second << endl;
+    // }
+
+    // auto it=m.find(3)
+    // if(it == m.end()){
+    //     cout<<"Value not found"<<endl;
+    // }else{
+    //     cout<<(*it).first << " "<<(*it).second<<endl;
     // }
 
     cout << m.size() << endl;
