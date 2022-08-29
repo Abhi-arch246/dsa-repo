@@ -20,5 +20,21 @@ int main()
         cout << it.first << " " << it.second << endl;
     }
 
+    // Find unique strings and their occurence.
+    int num;
+    cin >> num;
+    map<string, int> ustring;
+    for (int i = 0; i < num; i++)
+    {
+        string s;
+        cin >> s;
+        ustring[s]++;
+    }
+
+    for (auto &it : ustring)
+    {
+        cout << it.first << " " << it.second << endl;
+    }
+
     return 0;
 }
