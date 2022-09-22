@@ -1,1 +1,5 @@
 18 July 2022 - 8pm IST
+
+Cheat Sheet Questions - https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/
+Road Map - https://dynalist.io/d/nXXVAcgAsj62GW-XaIiJS3o9
+Mind Map - https://whimsical.com/dsa-in-90-days-EmPkf5utoFGRMnRqJjM6YV
