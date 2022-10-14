@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
 
+    // Set - O(log(n)), Unordered Map - O(1)
     set<string> st;
     st.insert("abhi");
     st.insert("akhi");
