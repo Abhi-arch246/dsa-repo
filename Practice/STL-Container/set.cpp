@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    // Set - O(1), Unordered Set - O(1)
+    // Set - O(log(n)), Unordered Set - O(1), Multi Set - O(log(n))
     set<string> st;
     st.insert("abhi");
     st.insert("akhi");
